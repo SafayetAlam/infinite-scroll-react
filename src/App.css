@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+	letter-spacing: 4px;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.searchBar {
+	margin-bottom: 16px;
+	width: 400px;
+	padding: 10px;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid black;
+}
+.searchBar::placeholder {
+	font-size: 22px;
+	color: #ccc;
+	text-align: center;
+}
+.searchBar:focus {
+	background-color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bookList {
+	font-size: 26px;
+	border: 1px solid black;
+	margin-bottom: 4px;
+	padding: 8px;
+	width: 500px;
+	word-wrap: break-word;
+	background-color: whitesmoke;
+}
+
+.loader {
+	font-size: 22px;
+	color: blue;
+}
+
+.displayError {
+	font-size: 22px;
+	color: red;
+}
+
+@media screen and (max-width: 500px) {
+	h2,
+	.searchBar,
+	.bookList,
+	.loader,
+	.displayError {
+		font-size: 16px;
+	}
+	p {
+		font-size: 12px;
+	}
+	.bookList {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.searchBar,
+	.bookList {
+		width: 300px;
+	}
 }
