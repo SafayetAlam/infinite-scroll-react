@@ -7,4 +7,4 @@ https://user-images.githubusercontent.com/86869464/203256800-2f6dd0ad-6470-4a66-
 * REACT
   - Hooks (useState, useEffect), Axios, IntersectionObserver etc.
 
-> GitHub [@SafayetAlam](https://github.com/SafayetAlam) &nbsp;&middot;&nbsp;
+> GitHub [@safayetdib](https://github.com/safayetdib) &nbsp;&middot;&nbsp;
